@@ -1,17 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from '../Components/Navegation/Nav';
+import { Routes, Route } from "react-router-dom";
 
 export function Navegation () {
 
     return (
-        <BrowserRouter>
-            <div>
-                <Nav />
-            </div>
+        <>
             <Routes>
                 <Route path="" element= { '' } />
             </Routes>
-        </BrowserRouter>
+        </>
     );
 }
