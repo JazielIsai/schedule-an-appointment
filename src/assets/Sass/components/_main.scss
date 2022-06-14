@@ -1,0 +1,7 @@
+.main {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    @include Grid_Column(1, 0rem);
+    
+}

@@ -1,0 +1,52 @@
+
+.footer {
+    max-height: 80px;
+    max-width: 100%;
+    @include Grid_Column(1, 0rem);
+    @include itemsCenter();
+    padding: 100px;
+    background: $blueClear;
+    h3 {
+        padding: 0.6rem;
+        margin: 0;
+    }
+    .footer-contact {
+        @include Grid_Column(2, 1rem);
+        @include itemsCenter();
+        margin: 0;
+        padding: 0;
+
+        .footer-socialMedia {
+            @include Flex_Column(0rem);
+            @include itemsCenter();
+
+            margin: 0;
+            padding: 0;
+            .footer-icons {
+                @include Flex_Row(2rem);
+                
+                a {
+                    svg {
+                        font-size: 32px;
+                        color: $kingBlue;
+                    }
+                }
+            }
+        }
+
+        .footer-description {
+            @include Grid_Column(1, 0);
+            @include itemsCenter();
+            color: $kingBlue;
+            
+            p {
+                max-width: 60%;
+                font-size: 20px;
+            }
+        }
+
+        p{
+            font-size: 10px;
+        }
+    }
+}

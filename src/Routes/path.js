@@ -1,23 +1,43 @@
+/* Pages */
+import Home from '../Pages/Home';
+import About from '../Pages/About';
+import Login from '../Pages/Login';
+import Schedule from '../Pages/Schedule';
 
+/* React-Icons */
+import { HiHome } from 'react-icons/hi';
+import { IoIosMan } from 'react-icons/io';
+import { BiLogIn } from 'react-icons/bi';
+import { AiFillSchedule } from 'react-icons/ai';
 
 export const path = [
     {
-        to: '/inicio',
-        path: 'inicio',
-        Component: '',
-        name: 'Inicio'
+        to: '/',
+        path: '/',
+        Component: <Home />,
+        name: 'Inicio',
+        icon: <HiHome />
     },
     {
-        to: '/acerca',
-        path: 'acerca',
-        Component: '',
-        name: 'Acerca'
+        to: '/about',
+        path: 'about',
+        Component: <About />,
+        name: 'Acerca',
+        icon: <IoIosMan />
     },
     {
-        to: '/iniciar-seción',
-        path: 'iniciar-seción',
-        Component: '',
-        name: 'Iniciar Seción'
+        to: '/login',
+        path: 'login',
+        Component: <Login/>,
+        name: 'Iniciar Seción',
+        icon: <BiLogIn />
+    },
+    {
+        to: '/schedule',
+        path: 'schedule',
+        Component: <Schedule />,
+        name: 'Agendar',
+        icon: <AiFillSchedule />
     },
     {
         to: '/',
@@ -30,11 +50,5 @@ export const path = [
         path: '',
         Component: '',
         name: ''
-    },
-    {
-        to: '/agenda-cita',
-        path: 'agenda-cita',
-        Component: '',
-        name: 'Agendar'
     }
 ]

@@ -1,0 +1,129 @@
+
+.home {
+
+    max-width: 100%;
+    margin: auto;
+    padding: 3rem;
+
+    img {
+        border-radius: 20px;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0.6rem;
+    }
+
+    .presentacion {
+        @include Grid_Column(2, 1rem);
+
+
+        .presentacion-content {
+            @include Flex_Column(1rem);
+            @include itemsCenter();
+            width: 80%;
+            margin: auto;
+            height: 100%;
+
+            p{
+                text-align: center;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                padding: 1rem;
+                background: $colorbody;
+                color: $bluegreen;
+                text-decoration: none;
+                width: 190px;
+                border-radius: 0.5rem;
+                border: 1px solid #aaa;
+                text-align: center;
+
+                &:hover{
+                    background: $blueClear;
+                    border: none;
+                    color: $black;
+                }
+    
+                &:active {
+                    transform: scale(90%);
+                }
+            }
+        }
+
+    }
+
+    .helpPsychological {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        
+        .card-group {
+            @include Grid_Column(2, 6rem);
+            margin: auto;
+            
+            .card {
+                @include Flex_Column(0rem);
+                @include itemsCenter();
+                max-width: 400px;
+                max-height: 350px;
+                text-align: center;
+                
+                .card-title{
+                    color: $kingBlue;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .card-img-top {
+                    margin: 0;
+                    padding: auto;
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+            }
+        }
+    }
+    
+    .home-margen {
+        width: 100%;
+        height: 100%;
+        margin: 0;         
+    }
+
+    .card-group {
+        @include Grid_Column(3, 1rem);
+        margin: auto;
+
+        .card {
+            border-radius: 15px;
+            background: #f2fcfe;
+            box-shadow:  20px 20px 60px #ced6d8,
+                         -20px -20px 60px #ffffff;
+        }
+    }
+
+
+    h2 {
+        padding: 2rem 0;
+        margin: 0; 
+        color: $kingBlue;
+    }
+
+
+    .location {
+        border:0;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        iframe {
+            border-radius: 15px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+

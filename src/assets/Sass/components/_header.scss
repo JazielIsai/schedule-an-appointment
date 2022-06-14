@@ -1,0 +1,46 @@
+.header {
+    width: 100vw;
+    height: 45px;
+    background: $blueClear;
+    padding: 30px;
+    color: $kingBlue;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    @include Grid_Column(10, 1rem);
+    @include itemsCenter();
+
+    a{
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        border: none;
+        &:hover {
+            border: none;
+            background: transparent;
+            border: none;
+        }
+        &:active {
+            text-transform: scale(90%);
+        }
+    }
+  
+}
+
+.header svg {
+    grid-column: 1 / 2;
+    grid-row:  1 / 2;
+    font-size: 3rem;
+}
+  
+.title_header {
+    grid-column: 2 / 9;
+    grid-row:  1 / 2;  
+}
+  
+.login_header {
+    grid-column: 9 / 11;
+    grid-row:  1 / 2;
+}

@@ -1,0 +1,25 @@
+
+
+@mixin Grid_Column($column, $space) {
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    gap: $space;
+}
+
+@mixin Flex_Column($space) {
+    display: flex;
+    flex-direction: column;
+    gap: $space;
+}
+
+@mixin Flex_Row($space) {
+    display: flex;
+    flex-direction: row;
+    gap: $space;
+}
+
+@mixin itemsCenter {
+    place-content: center;
+    place-items: center;
+}
+

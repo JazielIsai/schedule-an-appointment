@@ -1,0 +1,41 @@
+.main .container-fluid {
+    @include Flex_Column(1rem);
+    @include itemsCenter();
+    margin: auto;
+    max-width: 100%;
+    padding: 4rem;
+
+    h1 {
+        font-weight: 800;
+    }
+
+    .form-inline {
+
+        .form-floating {
+            width: 350px;
+            .form-control {
+                max-width: 350px;
+                background: $colorbody;
+            }
+    
+        }
+
+        button {
+            background: $colorbody;
+            color: $bluegreen;
+            padding: 0.6rem;
+            width: 120px;
+            border-radius: 0.5rem;
+
+            &:hover{
+                background: $blueClear;
+                border: none;
+                color: $black;
+            }
+
+            &:active {
+                transform: rotate(90%);
+            }
+        }
+    }
+}
